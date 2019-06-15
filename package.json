@@ -2,7 +2,7 @@
   "name": "carson",
   "version": "1.0.0",
   "description": "",
-  "main": "carson.js",
+  "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.4.2",
     "ffmpeg": "^0.0.4",
