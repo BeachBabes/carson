@@ -10,6 +10,13 @@ client.on('message', async msg => {
     const args = msg.content.split(' ')
     if(command === 'stream')
     {
+	{
+        if(!msg.member.hasPermission("ADMINISTRATOR"))
+            {
+                msg.channel.send('https://cdn.discordapp.com/attachments/502238703335505920/589312397915717661/Z.png')
+                return;
+            }
+        }
         var strem = ("@everyone watch the strem https://www.twitch.tv/papurr_v1")
         client.channels.get('471433032541274113').send(strem)
     }
