@@ -4,7 +4,7 @@ const client = new Client({disableEveryone: false})
 const PREFIX = ("-")
 client.on('ready', function(){
     console.log(`Bot Ready for ${client.users.size} users`);
-    client.user.setPresence({ game: { name: 'Carson Stream', type: "watching", url: "https://www.twitch.tv/Papurr_v1"}});
+    client.user.setPresence({ game: { name: 'you', type: "watching", url: "https://www.twitch.tv/Papurr_v1"}});
     client.user.setStatus('online')
 });
 client.on('message', async msg => {
